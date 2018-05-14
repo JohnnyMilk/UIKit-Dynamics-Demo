@@ -53,18 +53,18 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
 
     private func setDynamicBehavior() {
         animator = UIDynamicAnimator(referenceView: contentView)
-        
+
         animator?.addBehavior(gravity)
-        
+
         collision.translatesReferenceBoundsIntoBoundary = true
         collision.collisionDelegate = self
         animator?.addBehavior(collision)
         
         behavior = UIDynamicItemBehavior()
-        behavior.elasticity = 0.7
-        behavior.friction = 0.3
-        behavior.resistance = 0.1
-        behavior.allowsRotation = true
+        behavior.elasticity = 0.7       //反彈係數
+        behavior.friction = 0.3         //摩擦力
+        behavior.resistance = 0.1       //阻力
+        behavior.allowsRotation = true  //旋轉
         animator?.addBehavior(behavior)
     }
     
