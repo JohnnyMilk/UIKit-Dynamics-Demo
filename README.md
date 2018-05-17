@@ -1,7 +1,7 @@
 # UIKit-Dynamics-Demo
 A demo for UIKit Dynamics
 
-[Related website][Reference]
+[Related Website][Reference]
 
 
 ![image][DEMO]
